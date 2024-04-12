@@ -6,7 +6,7 @@ import { Home } from "./pages";
 import Image2 from "src/assets/images/2.jpg";
 export const App = () => {
   return (
-    <Box className="App">
+    <Box className="App" sx={{ width: "100%" }}>
       <Header />
       <Hero />
       <Home />
