@@ -6,17 +6,9 @@ import {
   TimelineDot,
   TimelineOppositeContent,
 } from "@mui/lab";
-import {
-  Typography,
-  Box,
-  Grid,
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-} from "@mui/material";
+import { Typography, Box, Grid } from "@mui/material";
 import { DutiesList } from "./DutiesList";
 import { IRoleModel, styles } from "../careerTimelineHelpers";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 interface ICareerTimelineItemModel {
   role: IRoleModel;
