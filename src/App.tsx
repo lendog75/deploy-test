@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Box } from "@mui/material";
+import "./App.css";
+import { Header } from "./components/header/Header";
+import { Hero } from "./components/hero/Hero";
+import { Home } from "./pages";
+import Image2 from "src/assets/images/2.jpg";
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit 1234 <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box className="App">
+      <Header />
+      <Hero />
+      <Home />
+      <img src={Image2} style={{ width: "100%" }} />;
+    </Box>
   );
-}
+};
 
 export default App;
