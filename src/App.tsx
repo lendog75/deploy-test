@@ -7,7 +7,7 @@ import Image2 from "src/assets/images/2.jpg";
 export const App = () => {
   return (
     <Box sx={{ width: "100%", border: "1px solid yellow" }}>
-      <Header />
+      {/* <Header /> */}
 
       <Hero />
       <Home />
