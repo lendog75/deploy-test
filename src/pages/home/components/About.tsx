@@ -4,7 +4,7 @@ import { SectionGroup } from "src/components";
 export const About = () => {
   return (
     <SectionGroup
-      heading="About"
+      heading="About1"
       text="Family man, outdoorsman, and software developer who loves to work with
       React. Responsive Design and RESTFul
       API’s are also personal favorites. In everything I do I am a “maker”.
