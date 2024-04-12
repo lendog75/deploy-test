@@ -1,11 +1,8 @@
-import { Box, Container, Grid, Stack } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 
 import { About } from "./components/About";
 import { Education } from "./components/Education";
 import { CareerTimeline } from "./components/career-timeline/CareerTimeline";
-
-import Image3 from "src/assets/images/3.jpg";
-import Image4 from "src/assets/images/4.jpg";
 
 // adjust about to NOT say angular is my favorite thing
 // TODO: Cleanup about, add tech stack section between photos

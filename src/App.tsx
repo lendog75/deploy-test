@@ -10,7 +10,7 @@ export const App = () => {
       <Header />
       <Hero />
       <Home />
-      <img src={Image2} style={{ width: "100%" }} />;
+      <img src={Image2} style={{ width: "100%" }} alt="test" />;
     </Box>
   );
 };
