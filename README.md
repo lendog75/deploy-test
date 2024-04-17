@@ -15,7 +15,7 @@ There is no doubt there is still a lot to do to make it as polished as I would l
 - Add Avatar
 - Detail Colors
 - Detail  Fonts  
-    -roboto for body, need a heading font
+    - roboto for body, need a heading font
 - work on navigation, color, hide hamburger, make it mobile friendly
 - Detail headings
 - Add social media icons for linkedIn, Email, and Github
