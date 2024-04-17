@@ -1,46 +1,46 @@
-# Getting Started with Create React App
+# Welcome to my resume app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Thanks for checking out the source code for my online resume app.
 
-## Available Scripts
+I created this to let employers get a look at my code layout and styling
 
-In the project directory, you can run:
+There is no doubt there is still a lot to do to make it as polished as I would like...  here are just a few TODO's that I plan to get updated
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- adjust about to NOT say angular is my favorite thing
 
-### `npm test`
+- TODO: Cleanup about, add tech stack section between photos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Add Avatar
+- Detail Colors
+- Detail  Fonts  
+    -roboto for body, need a heading font
+- work on navigation, color, hide hamburger, make it mobile friendly
+- Detail headings
+- Add social media icons for linkedIn, Email, and Github
+- Add resume download in word format
+- Add the rest of my positions
+- collapse or partially collapse roles
+- look for sloppy styling or markup
+- find a way to add team lead responsibilities
+- find way to reference Solterra Workshop
+- possibly add role filtering
 
-### `npm run build`
+- reference Security Clearance: DoD Secret (NACLC)- September 2009
+- discuss responsive design
+- discuss refactoring
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-quotes:
+    - The trick isnt adding stuff, it is taking it away.
+        - Mark Zuckerberg, Facebook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+        - Martin Fowler
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Teaching peers is one of the best ways to develop mastery.
+         - Jeff Atwood, Stackoverflow
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## See It Deployed
+[Lenny Reed Resume](https://lennyreed.com)
