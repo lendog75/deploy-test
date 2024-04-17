@@ -31,7 +31,7 @@ There is no doubt there is still a lot to do to make it as polished as I would l
 - discuss responsive design
 - discuss refactoring
 
--quotes:
+- quotes:
     - The trick isnt adding stuff, it is taking it away.
         - Mark Zuckerberg, Facebook
 
