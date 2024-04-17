@@ -146,7 +146,7 @@ export const roles = [
   },
   {
     title: "Sr. Software Developer",
-    orgName: "Graebel CompaniesGraebel Companies",
+    orgName: "Graebel Companies",
     begin: "Dec 2010",
     end: "Feb 2013",
     location: "Denver, Colorado",
