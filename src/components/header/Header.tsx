@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Box,
   AppBar,
@@ -5,28 +7,22 @@ import {
   IconButton,
   Typography,
   Button,
+  CssBaseline,
+  Divider,
+  Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
 } from "@mui/material";
 
-import * as React from "react";
-
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
 
 interface Props {
   window?: () => Window;
 }
 
 const drawerWidth = 240;
-// "Home", "About", "Experience", "Education", "Contact"
 const navItems: string[] = [];
 
 export const Header = (props: Props) => {

@@ -38,20 +38,11 @@ export const CareerTimelineItem = (props: ICareerTimelineItemModel) => {
               <Typography gutterBottom variant="h6">
                 {orgName}
               </Typography>
-              {/* <Accordion defaultExpanded>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                > */}
 
               {notes}
               <Typography variant="h6">Details:</Typography>
-              {/* </AccordionSummary>
-                <AccordionDetails> */}
+
               <DutiesList duties={duties || []} />
-              {/* </AccordionDetails>
-              </Accordion> */}
             </Grid>
           </Grid>
         </Box>

@@ -1,10 +1,10 @@
-import { Timeline, timelineOppositeContentClasses } from "@mui/lab";
+import React from "react";
 
+import { Timeline, timelineOppositeContentClasses } from "@mui/lab";
 import { CareerTimelineItem } from "./components/CareerTimelineItem";
 import { IRoleModel } from "./careerTimelineHelpers";
 import { SectionGroup } from "src/components";
 import { roles } from "src/assets/data";
-import React from "react";
 
 export const CareerTimeline = () => {
   const careerRoles: IRoleModel[] = roles;

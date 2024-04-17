@@ -7,8 +7,8 @@ export const roles = [
     location: "Denver, Colorado",
     inOffice: "Hybrid",
     duties: [
-      "led a team of developers in creating intuitive and visually appealing user interfaces.",
-      " Migrated company from Angular based front ends to React.",
+      "Led a team of developers in creating intuitive and visually appealing user interfaces.",
+      "Migrated company from Angular based front ends to React.",
       "Oversaw the work of many others  including in-person, remote, and off-shore team members.",
       "Mentored more junior devs helping them grow their careers and  become trusted productive team members. ",
       "Worked closely with  the business to identify requirements and establish expectations.",

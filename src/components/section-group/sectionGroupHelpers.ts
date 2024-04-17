@@ -5,7 +5,7 @@ export interface SectionGroupModel {
 }
 
 export const styles = {
-  section: { px: 6, py: 3 },
+  section: { px: { xs: 3, sm: 6 }, my: 3 },
   heading: { textAlign: "left" },
   content: { textAlign: "left" },
 };
