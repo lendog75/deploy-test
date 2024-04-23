@@ -5,7 +5,7 @@ export const Hero = () => {
     <img
       src={HeroImage}
       style={{ width: "100%", touchAction: "none" }}
-      alt="testing"
+      alt="main hero"
     />
   );
 };
