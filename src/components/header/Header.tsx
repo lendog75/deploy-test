@@ -16,8 +16,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Image1 from "src/assets/images/1.jpg";
 import { styles } from "./headerHelpers";
 
-const pages = ["Download Resume", "Solterra Workshop"];
-
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
@@ -65,11 +63,11 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem key="resume">
+                <Button variant="text" href="/Lenny Reed Resume 2024.docx">
+                  <Typography textAlign="center">Download Resume</Typography>
+                </Button>
+              </MenuItem>
             </Menu>
           </Box>
 
@@ -82,16 +80,21 @@ function ResponsiveAppBar() {
           >
             Lenny Reed
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "end",
+              mr: 3,
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            <Button
+              variant="text"
+              href="/Lenny Reed Resume 2024.docx"
+              sx={{ color: "#ffffff" }}
+            >
+              <Typography textAlign="center">Download Resume</Typography>
+            </Button>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
