@@ -7,6 +7,9 @@ import Image2 from "src/assets/images/2.jpg";
 import HeroImage from "src/assets/images/1.jpg";
 import { About } from "./pages/home/components/About";
 import Header from "./components/header/Header";
+import { Quotes } from "./pages/home/components/Quotes";
+import { OtherInterests } from "./pages/home/components/OtherInterests";
+
 export const App = () => {
   return (
     <>
@@ -29,6 +32,12 @@ export const App = () => {
               style={{ width: "100%", touchAction: "none" }}
               alt="main hero"
             />
+          </Grid>
+          <Grid item sm={12} md={6}>
+            <Quotes />
+          </Grid>
+          <Grid item sm={12} md={6}>
+            <OtherInterests />
           </Grid>
         </Grid>
 
