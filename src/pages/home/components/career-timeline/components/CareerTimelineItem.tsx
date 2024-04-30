@@ -24,9 +24,9 @@ export const CareerTimelineItem = (props: ICareerTimelineItemModel) => {
         </Box>
         <Box>{location}</Box>
       </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineDot />
-        <TimelineConnector />
+      <TimelineSeparator sx={{ color: "#6f8faf" }}>
+        <TimelineDot style={{ backgroundColor: "#486684" }} />
+        <TimelineConnector style={{ backgroundColor: "#adbfd2" }} />
       </TimelineSeparator>
       <TimelineContent>
         <Box sx={styles.timelineContent}>

@@ -5,7 +5,18 @@ export interface SectionGroupModel {
 }
 
 export const styles = {
-  section: { px: { xs: 3, sm: 6 }, my: 3 },
-  heading: { textAlign: "left" },
-  content: { textAlign: "left" },
+  section: {
+    display: "block",
+    marginBottom: "16px",
+  },
+  heading: {
+    textAlign: "left",
+    marginBottom: "8px",
+    borderBottom: "2px solid #6f8faf",
+    color: "#6f8faf",
+    width: "fit-content",
+    fontWeight: "700",
+  },
+  body: { textAlign: "left" },
+  content: { display: "flex", justifyContent: "start", mt: 3 },
 };

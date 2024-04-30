@@ -10,7 +10,7 @@ export const CareerTimeline = () => {
   const careerRoles: IRoleModel[] = roles;
 
   return (
-    <SectionGroup heading="Experience">
+    <SectionGroup heading="Work Experience">
       <Timeline
         sx={{
           [`& .${timelineOppositeContentClasses.root}`]: {

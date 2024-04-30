@@ -1,115 +1,105 @@
 import { useState } from "react";
-
 import {
-  Box,
   AppBar,
+  Box,
   Toolbar,
   IconButton,
   Typography,
+  Menu,
+  Container,
+  Avatar,
   Button,
-  CssBaseline,
-  Divider,
-  Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
+  MenuItem,
 } from "@mui/material";
-
 import MenuIcon from "@mui/icons-material/Menu";
 
-interface Props {
-  window?: () => Window;
-}
+import Image1 from "src/assets/images/1.jpg";
+import { styles } from "./headerHelpers";
 
-const drawerWidth = 240;
-const navItems: string[] = [];
+const pages = ["Download Resume", "Solterra Workshop"];
 
-export const Header = (props: Props) => {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = useState(false);
+function ResponsiveAppBar() {
+  const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
   };
 
-  const drawer = (
-    <section>
-      <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-        <Typography variant="h6" sx={{ my: 2 }}>
-          Lenny Reed
-        </Typography>
-
-        <Divider />
-        <List>
-          {navItems.map((item) => (
-            <ListItem key={item} disablePadding>
-              <ListItemButton sx={{ textAlign: "center" }}>
-                <ListItemText primary={item} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </section>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-
-          <Typography
-            variant="h2"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
-          >
+    <AppBar position="static" style={{ backgroundColor: "#6f8faf" }}>
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Typography variant="h6" noWrap component="a" sx={styles.title}>
             Lenny Reed
           </Typography>
 
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                {item}
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={styles.mobileTitle}
+          >
+            Lenny Reed
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+            {pages.map((page) => (
+              <Button
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                {page}
               </Button>
             ))}
           </Box>
-        </Toolbar>
-      </AppBar>
 
-      <nav>
-        <Drawer
-          container={container}
-          variant="temporary"
-          open={mobileOpen}
-          onClose={handleDrawerToggle}
-          ModalProps={{
-            keepMounted: true,
-          }}
-          sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
-              width: drawerWidth,
-            },
-          }}
-        >
-          {drawer}
-        </Drawer>
-      </nav>
-    </Box>
+          <Box sx={{ flexGrow: 0 }}>
+            <Avatar alt="Lenny Avatar" src={Image1} />
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
   );
-};
+}
+export default ResponsiveAppBar;
