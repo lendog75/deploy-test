@@ -19,14 +19,49 @@ export const About = () => {
           justifyContent: "start",
         }}
       >
-        <br />
-        <br />
-        <Typography variant="h6" sx={{ ml: 0 }}>
-          Non Tech Interests
-        </Typography>
-        <Typography variant="body1" sx={{ ml: 0 }}>
-          Corvettes, Woodworking, Watching Football, and Hiking
-        </Typography>
+        <>
+          <Typography variant="h6" sx={{ ml: 0 }}>
+            Latest Tech Interests
+          </Typography>
+          <Typography variant="body1" sx={{ ml: 0, mb: 2 }}>
+            React, Next.JS, React Native, Typescript
+          </Typography>
+        </>
+        <>
+          <Typography variant="h6" sx={{ ml: 0 }}>
+            Favorite Quotes
+          </Typography>
+          <ul>
+            <li style={{ marginBottom: "16px" }}>
+              <Typography variant="body1" sx={{ ml: 0 }}>
+                Any fool can write code that a computer can understand. Good
+                programmers write code that humans can understand.
+              </Typography>
+              <em>- Martin Fowler</em>
+            </li>
+            <li style={{ marginBottom: "16px" }}>
+              <Typography variant="body1" sx={{ ml: 0 }}>
+                Teaching peers is one of the best ways to develop mastery.
+              </Typography>
+              <em>- Jeff Atwood, Stackoverflow</em>
+            </li>
+            <li style={{ marginBottom: "16px" }}>
+              <Typography variant="body1" sx={{ ml: 0 }}>
+                The trick isnt adding stuff, it is taking it away.
+              </Typography>
+              <em>- Mark Zuckerberg, Facebook</em>
+            </li>
+          </ul>
+        </>
+
+        <>
+          <Typography variant="h6" sx={{ ml: 0 }}>
+            Non Tech Interests
+          </Typography>
+          <Typography variant="body1" sx={{ ml: 0, mb: 2 }}>
+            Corvettes, Woodworking, Watching Football, and Hiking
+          </Typography>
+        </>
       </Box>
     </SectionGroup>
   );
