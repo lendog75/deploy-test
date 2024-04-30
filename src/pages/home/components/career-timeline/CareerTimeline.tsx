@@ -19,7 +19,7 @@ export const CareerTimeline = () => {
         }}
       >
         {React.Children.toArray(
-          careerRoles.map((r: any) => <CareerTimelineItem role={r} />)
+          careerRoles.map((r: IRoleModel) => <CareerTimelineItem role={r} />)
         )}
       </Timeline>
     </SectionGroup>

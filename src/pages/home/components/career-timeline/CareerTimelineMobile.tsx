@@ -12,12 +12,14 @@ const CareerItemMobile = (props: any) => {
   return (
     <Box sx={{ my: 2, mx: 1 }}>
       <Box>
-        <Typography variant="h4">{title}</Typography>
-        <Typography variant="h5" component="p">
+        <Typography variant="h4" sx={{ fontSize: "24px" }}>
+          {title}
+        </Typography>
+        <Typography variant="h5" component="p" sx={{ fontSize: "20px" }}>
           {orgName}
         </Typography>
 
-        <Box>
+        <Box sx={{ fontSize: "18px" }}>
           {begin} - {end}
         </Box>
         <Box>{location}</Box>
@@ -35,7 +37,7 @@ export const CareerTimelineMobile = () => {
   const careerRoles: IRoleModel[] = roles;
 
   return (
-    <SectionGroup heading="Experience">
+    <SectionGroup heading="Work Experience">
       <Stack>
         {React.Children.toArray(
           careerRoles.map((r: any) => <CareerItemMobile role={r} />)
