@@ -9,9 +9,16 @@ import { About } from "./pages/home/components/About";
 import Header from "./components/header/Header";
 export const App = () => {
   return (
-    <div style={{ padding: "0 32px" }}>
+    <>
       <Header />
-      <main style={{ display: "flex", flexDirection: "column" }}>
+
+      <main
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          padding: "0 32px",
+        }}
+      >
         <Grid container spacing={2} style={{ paddingTop: "32px" }}>
           <Grid item sm={12} md={6}>
             <About />
@@ -31,7 +38,7 @@ export const App = () => {
           <img src={Image2} style={{ width: "100%" }} alt="test" />
         </footer>
       </main>
-    </div>
+    </>
   );
 };
 
